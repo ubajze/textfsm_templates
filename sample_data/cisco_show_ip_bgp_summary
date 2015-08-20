@@ -1,0 +1,19 @@
+ESW1#sh ip bgp s
+*Mar  1 00:21:54.935: %SYS-5-CONFIG_I: Configured from console by console
+ESW1#sh ip bgp summ
+ESW1#sh ip bgp summary 
+BGP router identifier 192.168.2.2, local AS number 100
+BGP table version is 12, main routing table version 12
+10 network entries using 1170 bytes of memory
+13 path entries using 676 bytes of memory
+9/6 BGP path/bestpath attribute entries using 1116 bytes of memory
+3 BGP AS-PATH entries using 72 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 3034 total bytes of memory
+BGP activity 10/0 prefixes, 14/1 paths, scan interval 60 secs
+
+Neighbor        V    AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+192.168.1.1     4   100      31      24       12    0    0 00:19:27        8
+192.168.2.1     4   200      28      27       12    0    0 00:18:57        4
+

@@ -1,0 +1,14 @@
+Value Status (s|d|h|\*|r)
+Value BestPath (\s|>)
+Value Internal (\s|i)
+Value Filldown Network ([0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}(\/\d{1,2}){0,1})
+Value Required Nexthop ([0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3})
+Value Metric (\d+)
+Value LocalPreference (\d+)
+Value Weight (\d+)
+Value Path ((\d+\s)*)
+Value Origin (i|e|\?)
+
+Start
+  ^${Status}${BestPath}${Internal}${Network}\s+${Nexthop}\s+${Metric}\s+${LocalPreference}\s+${Weight}\s -> Record
+  ^${Status}${BestPath}${Internal}\s+${Nexthop} -> Record

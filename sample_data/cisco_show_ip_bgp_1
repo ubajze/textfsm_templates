@@ -1,0 +1,20 @@
+ESW1(config-router)#do sh ip bgp
+BGP table version is 12, local router ID is 192.168.2.2
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal,
+              r RIB-failure, S Stale
+Origin codes: i - IGP, e - EGP, ? - incomplete
+
+   Network          Next Hop            Metric LocPrf Weight Path
+*> 4.4.4.4/32       192.168.2.1              0             0 200 i
+*> 7.7.0.0/17       0.0.0.0                  0         32768 i
+*>i10.0.3.0/24      192.168.1.1              0    100      0 ?
+*  23.0.1.0/24      192.168.2.1                            0 200 300 i
+*>i                 192.168.1.1              0    100      0 300 i
+*>i128.0.0.0/3      192.168.1.1              0    100      0 i
+*>i172.3.0.0        192.168.1.1              0    100      0 ?
+r>i192.168.1.0      192.168.1.1              0    100      0 ?
+*  192.168.3.0      192.168.2.1                            0 200 300 ?
+*>i                 192.168.1.1              0    100      0 300 ?
+*>i192.168.4.0      192.168.1.1              0    100      0 ?
+*  193.0.0.0        192.168.2.1                            0 200 300 ?
+*>i                 192.168.1.1              0    100      0 300 ?
